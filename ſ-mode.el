@@ -54,13 +54,16 @@
 ;; 3. ſhort s is uſed before the letter 'f' (e.g. ſatisfaction,
 ;; misfortune, transfuſe)
 
-;; 4. Compound words, with the firſt element ending in double s, and
+;; 4. ſhort s is uſed after the letter 'f' (e.g. offset, beefsteak),
+;; although not if the word is hyphenated (e.g. off-ſet, beef-ſteak)
+
+;; 5. Compound words, with the firſt element ending in double s, and
 ;; thecond element beginning with s, are normally and correctly
 ;; written with a dividing hyphen (e.g. Croſs-ſtitch), but very
 ;; occaſionally may be written as a ſingle word, in which caſe the
 ;; middle letter 's' is written ſhort (e.g. croſsſtitch).
 
-;; 5. Long s is uſed initially and medially except in caſes
+;; 6. Long s is uſed initially and medially except in caſes
 ;; deſcribed above (e.g. ſong, uſe, preſs, ſubſtitute).
 
 ;; Theſe rules are derived from \"The Rules for Long S\", by Andrew
@@ -171,15 +174,18 @@ post-self-insert-hook function used by `ſ-mode', and also by
                        (eq candidate ?S))
                    (save-excursion
                      (backward-char 1)
-                     (and (not (looking-at "\\W"))  ; (rules 1 and 2)
-                          (not (looking-at "f"))))) ; (rule 3)
-          ;; Replace short s with long s (rule 5)
+                     (and (not (looking-at "\\W")) ; (rules 1 and 2)
+                          (not (looking-at "f")))) ; (rule 3)
+                   (save-excursion
+                     (backward-char 3)
+                     (not (looking-at "f")))) ; (rule 4)
+          ;; Replace short s with long s (rule 6)
           (progn
             (backward-char 1)
             (backward-delete-char 1)
             (insert "ſ")
             (forward-char 1))
-          ;; Fix up triple-ſ (rule 4)
+          ;; Fix up triple-ſ (rule 5)
           (if (save-excursion
                 (backward-char 4)
                 (looking-at "ſſſ"))
@@ -245,13 +251,16 @@ non-alphabetical character (e.g. clos'd, us'd, neces-ſary)
 3. ſhort s is uſed before the letter 'f' (e.g. ſatisfaction,
 misfortune, transfuſe)
 
-4. Compound words, with the firſt element ending in double s, and
+4. ſhort s is uſed after the letter 'f' (e.g. offset), although
+not if the word is hyphenated (e.g. off-ſet)
+
+5. Compound words, with the firſt element ending in double s, and
 thecond element beginning with s, are normally and correctly
 written with a dividing hyphen (e.g. Croſs-ſtitch), but very
 occaſionally may be written as a ſingle word, in which caſe the
 middle letter 's' is written ſhort (e.g. croſsſtitch).
 
-5. Long s is uſed initially and medially except in caſes
+6. Long s is uſed initially and medially except in caſes
 deſcribed above (e.g. ſong, uſe, preſs, ſubſtitute).
 
 Theſe rules are derived from \"The Rules for Long S\", by Andrew
