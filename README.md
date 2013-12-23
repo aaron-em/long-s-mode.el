@@ -133,9 +133,9 @@ happy to hear my humble efforts have achieved wide enough intereſt
 to reſult in a fork hoſted ſomewhere elſe. I'd be obliged if you'd
 drop me a line to let me know about it.
 
-*The repository in which you find this file is named 'long-s-mode.el'
- for reasons of Github's apparent incapacity to support repositories
- whose names contain characters outside the ISO-8859-1 range.*
+The repoſitory in which you find this file is named 'long-s-mode.el'
+for reaſons of Github's apparent incapacity to ſupport repoſitories
+whoſe names contain characters outſide the ISO-8859-1 range.
 
 [WIKI]: http://en.wikipedia.org/wiki/Long_s
 [REPO]: https://github.com/aaron-em/ſ-mode.el
