@@ -66,7 +66,7 @@
 ;; 6. Long s is uſed initially and medially except in caſes
 ;; deſcribed above (e.g. ſong, uſe, preſs, ſubſtitute).
 
-;; Theſe rules are derived from \"The Rules for Long S\", by Andrew
+;; Theſe rules are derived from "The Rules for Long S", by Andrew
 ;; Weſt, which may be appreciated in full on his blog [WEſT].  All
 ;; credit for deriving thoſe uſage rules accrues to Mr. Weſt; the
 ;; blame for whatever lexicographical damage has been done by my
