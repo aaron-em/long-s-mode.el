@@ -144,5 +144,5 @@ whoſe names contain characters outſide the ISO-8859-1 range.
 
 [WIKI]: http://en.wikipedia.org/wiki/Long_s
 [REPO]: https://github.com/aaron-em/long-s-mode.el
-[WEſT]: http://babelſtone.blogſpot.com/2006/06/rules-for-long-s.html#EnglishRules
+[WEſT]: http://babelſtone.blogspot.com/2006/06/rules-for-long-s.html#EnglishRules
 [ANIM]: https://raw.github.com/aaron-em/long-s-mode.el/master/example.gif
