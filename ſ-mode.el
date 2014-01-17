@@ -45,16 +45,16 @@
 ;; doing ſo is orthographically valid. The rules by which this
 ;; determination is made are as follows:
 
-;; 1. ſhort s is uſed at the end of a word (e.g. his, complains,
+;; 1. Short s is uſed at the end of a word (e.g. his, complains,
 ;; ſucceſs)
 
-;; 2. ſhort s is uſed before an apoſtrophe, or indeed any
+;; 2. Short s is uſed before an apoſtrophe, or indeed any
 ;; non-alphabetical character (e.g. clos'd, us'd, neces-ſary)
 
-;; 3. ſhort s is uſed before the letter 'f' (e.g. ſatisfaction,
+;; 3. Short s is uſed before the letter 'f' (e.g. ſatisfaction,
 ;; misfortune, transfuſe)
 
-;; 4. ſhort s is uſed after the letter 'f' (e.g. offset, beefsteak),
+;; 4. Short s is uſed after the letter 'f' (e.g. offset, beefsteak),
 ;; although not if the word is hyphenated (e.g. off-ſet, beef-ſteak)
 
 ;; 5. Compound words, with the firſt element ending in double s, and
@@ -121,22 +121,6 @@
 ;; to its definition. If you know Emacs well enough to tell me what
 ;; I'm doing wrong there, I'll be delighted to hear from you.
 
-;; If there exiſts an uppercaſe verſion of the ſ-glyph, I am not aware
-;; of it. Its abſence reſults in the loſs of orthographic information
-;; when ſ-mode is in uſe, due to the tranſlation of the initial
-;; majuſcule S-glyph into a lowercaſe ſ-glyph. An implementation of
-;; the inverſe operation ſhould be able to recover this loſt
-;; information from context; a candidate rule might be "For a given
-;; 'ſ' ſurrounded by majuſcules, or occurring in the initial poſition
-;; of a word which follows a ſequence of non-alphanumeric characters,
-;; replace it with 'S'; otherwiſe, replace it with 's'." Even ſo,
-;; manual review and cleanup would likely be required.
-
-;; As ſomething of a corollary to the preceding point, this library
-;; does not implement tranſlation from ſ back to {S,s}. Perhaps
-;; ſomeday I'll be inclined to write that code; perhaps you'll do ſo
-;; before I get around to it, and delight me with a pull requeſt.
-
 ;;; Miſcellany:
 
 ;; The canonical verſion of this file is hoſted in my Github
@@ -149,7 +133,7 @@
 
 ;; [WIKI]: http://en.wikipedia.org/wiki/Long_s
 ;; [REPO]: https://github.com/aaron-em/long-s-mode.el
-;; [WEſT]: http://babelſtone.blogſpot.com/2006/06/rules-for-long-s.html#EnglishRules
+;; [WEſT]: http://babelstone.blogspot.com/2006/06/rules-for-long-s.html#EnglishRules
 
 ;;; Code:
 
@@ -170,8 +154,7 @@ post-self-insert-hook function used by `ſ-mode', and also by
     (save-excursion
       (goto-char where)
       (save-match-data
-        (when (and (or (eq candidate ?s)
-                       (eq candidate ?S))
+        (when (and (eq candidate ?s)
                    (save-excursion
                      (backward-char 1)
                      (and (not (looking-at "\\W")) ; (rules 1 and 2)
