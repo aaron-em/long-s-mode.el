@@ -225,16 +225,16 @@ with long 's' as you type."
 replaced with long 's' (ſ) glyphs, according to the following
 rules:
 
-1. ſhort s is uſed at the end of a word (e.g. his, complains,
+1. Short s is uſed at the end of a word (e.g. his, complains,
 ſucceſs)
 
-2. ſhort s is uſed before an apoſtrophe, or indeed any
+2. Short s is uſed before an apoſtrophe, or indeed any
 non-alphabetical character (e.g. clos'd, us'd, neces-ſary)
 
-3. ſhort s is uſed before the letter 'f' (e.g. ſatisfaction,
+3. Short s is uſed before the letter 'f' (e.g. ſatisfaction,
 misfortune, transfuſe)
 
-4. ſhort s is uſed after the letter 'f' (e.g. offset), although
+4. Short s is uſed after the letter 'f' (e.g. offset), although
 not if the word is hyphenated (e.g. off-ſet)
 
 5. Compound words, with the firſt element ending in double s, and
